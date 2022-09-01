@@ -1,0 +1,127 @@
+/* Header start */
+.site-scroll {
+    overflow: hidden;
+  }
+
+.site-header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    position: absolute;
+    top: 87px;
+    right: 34px;
+    z-index: 5;
+    display: none;
+    width: 223px;
+    padding: 40px 63px;
+    background-color: var(--dark-blue);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    @include list-unstyle;
+    text-align: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.nav__link {
+    @include link-unstyle;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav-open-btn {
+    width: 24px;
+    height: 13px;
+    background-image: url("../../images/open.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+}
+
+.site-dropdown .nav-open-btn {
+    width: 18px;
+    height: 19px;
+    background-image: url("../../images/close.svg");
+}
+
+.site-dropdown .nav {
+    display: block;
+}
+
+.site-header {
+    position: relative;
+    padding: 32px 0 40px 0;
+}
+
+
+@media only screen and (min-width:700px) {
+    .container {
+        padding: 0 40px;
+    }
+    .site-scroll  {
+        overflow-y: scroll;
+      }
+
+    .site-header {
+        padding: 64px 0 47px 0;
+    }
+
+    .nav {
+        position: static;
+        display: block;
+        width: 310px;
+        padding: 0;
+        background-color: transparent
+    }
+
+    .nav__list {
+        flex-direction: row;
+    }
+
+    .nav__item {
+        margin-bottom: 0;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    .nav__link {
+        color: var(--dark-blue);
+    }
+
+    .nav__link--active {
+        color: var(--dark-cyan);
+    }
+
+    .nav-open-btn {
+        display: none;
+    }
+    .site-scroll{
+        overflow: scroll;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .site-header {
+        padding: 64px 0 54px 0;
+    }
+}
+
+/* Header end */

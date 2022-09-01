@@ -1,0 +1,60 @@
+/*  Get In Touch start */
+.contact-touch-bar {
+    padding: 24px 0 32px 0;
+    border-top: 1px solid #ddddde;
+    border-bottom: 1px solid #ddddde;
+}
+
+.contact-touch-bar-wrapper__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--dark-blue);
+}
+
+.contact-touch-bar-wrapper__text {
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+.contact-touch-bar-list {
+    display: flex;
+    align-items: center;
+    @include list-unstyle
+}
+
+.contact-touch-bar-list__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.contact-touch-bar-list__link {
+    display: inline-block;
+}
+
+@media only screen and (min-width:1050px) {
+    .contact-touch-bar {
+        padding: 48px 0;
+    }
+
+    .contact-touch-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-touch-bar-wrapper__info-box {
+        max-width: 635px;
+    }
+
+    .contact-touch-bar-wrapper__text {
+        font-size: 16px;
+        margin: 0 0 24px 0;
+    }
+}
+
+/* Get In Touch start */

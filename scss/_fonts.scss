@@ -1,0 +1,37 @@
+/* FONTS */
+
+/* ibarra-real-nova-regular - latin */
+@font-face {
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ibarra-real-nova-v20-latin-regular.woff2') format('woff2'),
+        url('../fonts/ibarra-real-nova-v20-latin-regular.woff') format('woff');
+}
+
+/* ibarra-real-nova-700 - latin */
+@font-face {
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ibarra-real-nova-v20-latin-700.woff2') format('woff2'),
+        url('../fonts/ibarra-real-nova-v20-latin-700.woff') format('woff');
+}
+
+/* public-sans-regular - latin */
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/public-sans-v14-latin-regular.woff') format('woff');
+}
+
+/* public-sans-700 - latin */
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/public-sans-v14-latin-700.woff2') format('woff2'),
+        url('../fonts/public-sans-v14-latin-700.woff') format('woff');
+}

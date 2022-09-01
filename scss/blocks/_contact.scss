@@ -1,0 +1,134 @@
+/*  Contact start */
+
+
+.contact-wrapper__title {
+    margin: 0 0 24px 0;
+    font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--dark-blue);
+}
+
+.contact-form__input-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+.contact {
+    padding: 32px 0 80px 0;
+}
+
+.contact-form__input {
+    margin-top: 8px;
+    padding: 16px;
+    color: var(--dark-blue);
+    background-color: #e6e6e7;
+    border: 1px solid transparent;
+    outline: none;
+
+    &::placeholder {
+        font-size: 13px;
+        line-height: 30px;
+        color: #a1a1a7;
+    }
+
+    &:focus {
+        color: var(--dark-blue);
+        background-color: #33323d18;
+        border: 1px solid var(--dark-cyan);
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid {
+        border: 1px solid #f43030;
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid+.input-invalid-text {
+        opacity: 1;
+    }
+}
+
+.input-invalid-text {
+    position: absolute;
+    top: 89px;
+    left: 0;
+    opacity: 0;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #f43030;
+    transition: all .5s;
+}
+
+.contact-form__message {
+    height: 96px;
+    margin-top: 8px;
+    padding: 9px 16px;
+    background-color: #e6e6e7;
+    border: 1px solid transparent;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+        font-size: 13px;
+        color: var(--dark-blue);
+        opacity: 0.4;
+    }
+
+    &:focus {
+        color: var(--dark-blue);
+        background: #33323d18;
+        border: 1px solid var(--dark-cyan);
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid {
+        border: 1px solid #f43030;
+    }
+
+    &:not(:placeholder-shown):not(:focus):invalid+.input-invalid-text {
+        opacity: 1;
+    }
+}
+
+.input-invalid-text--active {
+    top: 137px;
+}
+
+.contact-form__btn {
+    padding: 17px 41px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #203a4c;
+    border: none;
+    transition: all .5s;
+
+    &:hover {
+        background-color: var(--dark-cyan);
+    }
+}
+
+@media only screen and (min-width:1050px) {
+    .contact-wrapper {
+        display: flex;
+    }
+
+    .contact-form-wrapper {
+        width: 635px;
+        margin-left: auto;
+    }
+}
+
+/* Contact end */

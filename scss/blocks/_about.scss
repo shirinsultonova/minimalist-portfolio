@@ -1,0 +1,109 @@
+/*  About start */
+#about {
+    padding-top: 76px;
+}
+
+.about-wrapper__img {
+    width: 100%;
+}
+
+.about-wrapper__text-box {
+    margin-top: 32px;
+    padding: 32px 0 51px 0;
+    border-top: 1px solid #ddddde;
+    border-bottom: 1px solid #ddddde;
+}
+
+.about-wrapper__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--dark-blue);
+}
+
+.about-wrapper__text {
+    margin: 28px 0 24px 0;
+    font-size: 15.5px;
+    line-height: 30px;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+.about-wrapper__link {
+    @include link-unstyle;
+    padding: 16px 32px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    transition: all .5s;
+
+    &:hover {
+        color: #fff;
+        background-color: var(--dark-blue);
+    }
+}
+
+@media only screen and (min-width:450px) {
+    .about-wrapper__img {
+        width: 350px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .about-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .about-wrapper__img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .about-wrapper__text-box {
+        padding: 50px 0 46px 0;
+    }
+
+    .about-wrapper__text-box {
+        max-width: 339px;
+        margin-top: 0;
+    }
+
+    .about-wrapper__img-box {
+        width: 50%;
+        margin-right: 69px;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    .about-wrapper {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .about-wrapper__img-box {
+        width: 50%;
+        margin-right: 69px;
+    }
+
+    .about-wrapper__text-box {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .about-wrapper__img-box {
+        margin-right: 125px;
+    }
+}
+
+/* About end */
