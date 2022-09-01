@@ -57,16 +57,12 @@
     background-color: #56a292;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
+@include bgRetinaImages {
     .hero-bgimage {
         background-image: url("../images/hero-img-mobile@2x.jpg");
     }
 }
+
 
 @media only screen and (min-width:375px) {
     .hero-bgimage {
@@ -93,16 +89,11 @@ only screen and (min-resolution: 2dppx) {
         background-image: url("../images/hero-img-tablet.jpg");
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-        .hero-bgimage {
-            background-image: url("../images/hero-img-tablet@2x.jpg");
-        }
+@include bgRetinaImages {
+    .hero-bgimage {
+        background-image: url("../images/hero-img-tablet@2x.jpg");
     }
+}
 
     .hero-wrapper__text-box {
         max-width: 514px;
@@ -148,16 +139,11 @@ only screen and (min-resolution: 2dppx) {
         background-image: url("../images/hero-img.jpg");
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-        .hero-bgimage {
-            background-image: url("../images/hero-img@2x.jpg");
-        }
+@include bgRetinaImages {
+    .hero-bgimage {
+        background-image: url("../images/hero-img@2x.jpg");
     }
+}
 }
 
 @media only screen and (min-width:1100px) {

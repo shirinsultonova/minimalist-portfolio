@@ -26,18 +26,19 @@
 
 .about-wrapper__text {
     margin: 28px 0 24px 0;
-    font-size: 15.5px;
+    font-size: 16px;
     line-height: 30px;
     color: var(--dark-blue);
     opacity: 0.8;
 }
 
 .about-wrapper__link {
-    width: 212px;
+    width: 202px;
     @include link-unstyle;
-    padding: 16px 32px;
+    padding: 17px;
     font-size: 12px;
     line-height: 14px;
+    text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--dark-blue);

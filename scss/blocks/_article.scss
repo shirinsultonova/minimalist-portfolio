@@ -1,12 +1,5 @@
 /* Article start */
 
-.interested-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .interested-wrapper__title {
     margin: 0;
     font-family: "Ibarra Real Nova", "Times New Roman", serif;
@@ -22,6 +15,14 @@
     padding-top: 115px;
     padding-bottom: 80px;
 }
+
+.interested-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .interested-wrapper__link {
     @include link-unstyle;
